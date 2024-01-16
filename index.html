@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Config Theme</title>
+
+</head>
+<body id="overflowFixed">
+ <!-- ========================= MENU ========================= -->
+  <header>
+    <div class="logo">
+      <div class="menu-btn">
+        <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+      </div>
+
+      <img src="./img/logo.png" onclick="window.location.href='./index.html'">
+    </div>
+
+    <ul id="btnsMenu" class="btnsMenu">
+      <li>
+        <a href="" class="btnMenu" onclick="menuShow()"> Link01 </a>
+      </li>
+
+      <li>
+        <a href="" class="btnMenu" onclick="menuShow()"> Link02 </a>
+      </li>
+
+      <li>
+        <div id="dropdown" class="dropdown">
+          <span> <a class="btnMenu"> Link03 </a>  </span>
+          <div class="dropdown-content">
+            <p> <a href="" onclick="menuShow()"> Link03 - 1 </a> </p>
+            <p> <a href="" onclick="menuShow()"> Link03 - 2 </a> </p>
+            <p> <a href="" onclick="menuShow()"> Link03 - 3 </a> </p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <a href="" class="btnMenu" onclick="menuShow()"> Link04 </a>
+      </li>
+
+      <li>
+        <a href="" class="btnMenu" onclick="menuShow()"> Link05 </a>
+      </li>
+    </ul>
+
+    <div class="logo">
+      <div class="config-btn">
+        <i class="fa fa-cog fa-lg" onclick="config_Show()"></i>
+      </div>
+
+      <ul id="Config" class="Config">
+        <li>
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </li>
+
+        <li>
+          <a href="" class="btnMenu" onclick="config_Show()"> Link01 </a>
+        </li>
+
+        <li>
+          <a href="" class="btnMenu" onclick="config_Show()"> Link02 </a>
+        </li>
+
+        <li>
+          <a href="" class="btnMenu" onclick="config_Show()"> Link03 </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+ <!-- ======================= FIM MENU ======================= -->
+
+
+ <!-- ==================== ÁREA CARROSSEL ==================== -->
+  <div id="slider">
+    <div class="scroll-container">
+      <img id="page-1" src="./images/#.png" alt="IMAGEM 01">
+      <img id="page-2" src="./images/#.png" alt="IMAGEM 02">
+      <img id="page-3" src="./images/#.png" alt="IMAGEM 03">
+    </div>
+  </div>
+ <!-- ================== FIM ÁREA CARROSSEL ================== -->
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
