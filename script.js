@@ -84,18 +84,45 @@
 
     // Verifica o tema e atualiza a caixa de seleção
     if (THEME === "dark") {
-      document.body.classList.add("dark");
-      TOGGLE.checked = true;
+        document.body.classList.add("dark");
+        TOGGLE.checked = true;
     }
 
     TOGGLE.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
+        document.body.classList.toggle("dark");
 
-      //Atualiza o tema no armazenamento local com base no estado da caixa de seleção
-      if (TOGGLE.checked) {
-        window.localStorage.setItem("theme", "dark");
-      } else {
-        window.localStorage.setItem("theme", "light");
-      }
+        //Atualiza o tema no armazenamento local com base no estado da caixa de seleção
+        if (TOGGLE.checked) {
+            window.localStorage.setItem("theme", "dark");
+        } else {
+            window.localStorage.setItem("theme", "light");
+        }
     });
   /* ============== FIM SCRIPT CONFIGURA TEMA ============== */
+
+
+  /* ============ SCRIPT ALTERA TAMANHO DA FONT ============ */
+    function fontSize(size) {
+        var body = document.querySelector('body');
+
+        // Remover todas as classes existentes
+        body.classList.remove('size_1', 'size_1-5', 'size_2');
+
+        // Adicionar a classe apropriada
+        body.classList.add('size_' + size);
+
+        // Armazenar a preferência do usuário no armazenamento local
+        localStorage.setItem('fontSizePreference', size);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Recuperar a preferência do usuário do armazenamento local
+        var savedSize = localStorage.getItem('fontSizePreference');
+
+        // Se houver uma preferência salva, use-a; caso contrário, inicie com o tamanho 1
+        fontSize(savedSize ? savedSize : 1);
+    });
+  /* ===================== FIM SCRIPT ====================== */
+
+
+    

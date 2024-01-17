@@ -15,6 +15,47 @@
     width: 0px;
   }
 
+
+/* ==============================================
+- TAMANHO DA FONT
+============================================== */
+  .size_1 {
+    font-size: 1em;
+    --height-label: 26px;
+    --width-label: 50px;
+    --top-ball: 2px;
+    --left-ball: 2px;
+    --height-ball: 22px;
+    --width-ball: 22px;
+    --translateX-ball: 24px;
+  }
+
+  .size_1-5 {
+    font-size: 1.5em;
+    --height-label: 39px;
+    --width-label: 75px;
+    --top-ball: 3px;
+    --left-ball: 3px;
+    --height-ball: 33px;
+    --width-ball: 33px;
+    --translateX-ball: 36px;
+  }
+
+  .size_2 {
+    font-size: 2em;
+    --height-label: 52px;
+    --width-label: 100px;
+    --top-ball: 4px;
+    --left-ball: 4px;
+    --height-ball: 44px;
+    --width-ball: 44px;
+    --translateX-ball: 48px;
+  }
+
+
+/* ==============================================
+- CHECKBOX MODO DARK
+============================================== */
   body {
     --bg-grey-light: #fafafa;
     --bg-white: #ffffff;
@@ -56,8 +97,8 @@
 
     padding: 5px;
     position: relative;
-    height: 26px;
-    width: 50px;
+    height: var(--height-label);
+    width: var(--width-label);
     transform: scale(1.5);
   }
 
@@ -66,16 +107,16 @@
     background-color: var(--bg-white);
     border-radius: 50%;
     position: absolute;
-    top: 2px;
-    left: 2px;
-    height: 22px;
-    width: 22px;
+    top: var(--top-ball);
+    left: var(--left-ball);
+    height: var(--height-ball);
+    width: var(--width-ball);
     transform: translateX(0px);
     transition: transform 0.2s linear;
   }
 
   .checkbox:checked + .label .ball {
-    transform: translateX(24px);
+    transform: translateX(var(--translateX-ball));
   }
 
   .fa-moon {
@@ -258,6 +299,10 @@
     margin: 40px 0px;
   }
 
+  .btnsFontSize {
+    color: var(--text-white);
+  }
+
   .fixando header div ul{
     overflow: auto !important;
     padding-bottom: 50px;
@@ -330,6 +375,7 @@
   #page-3 {
     background-color: #0000ff69; /* Cor de fundo para page-3 */
   }
+
 
 
 

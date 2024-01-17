@@ -72,8 +72,14 @@
         </li>
 
         <li>
-          <a href="" class="btnMenu" onclick="config_Show()"> Link03 </a>
+          <div id="dropdown" class="dropdown">
+            <span> <a class="btnMenu"> Text Size </a>  </span>
+            <div class="dropdown-content btnsFontSize">
+              <p> <a onclick="fontSize('1')"> 1x </a> | <a onclick="fontSize('1-5')"> 1.5x </a> | <a onclick="fontSize('2')"> 2x </a> </p>
+            </div>
+          </div>
         </li>
+
       </ul>
     </div>
   </header>
