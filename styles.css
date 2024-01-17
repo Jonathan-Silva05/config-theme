@@ -121,10 +121,16 @@
 
   .fa-moon {
     color: #f1c40f;
+    transition: visiblity 0.2s linear;
   }
 
   .fa-sun {
     color: #f39c12;
+    transition: visiblity 0.2s linear;
+  }
+
+  .hidden {
+    visibility: hidden;
   }
 
 
