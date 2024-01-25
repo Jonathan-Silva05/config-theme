@@ -14,7 +14,7 @@
     - *THEME-LIGHT-DARK*:
     changes the theme (light to dark or dark to light);
     - *TEXT-SIZE*:
-    changes the size of the text on the page (*1em*, *1.5em* and *2em*);
+    changes the size of the text on the page (*1em* and *1.5em*);
 
 
 
@@ -34,5 +34,5 @@
    - *THEME-LIGHT-DARK*:
    muda o tema (claro para escuro ou escuro para claro);
    - *TEXT-SIZE*:
-   altera o tamanho da texto na página (*1em*, *1.5em* e *2em*);
+   altera o tamanho da texto na página (*1em* e *1.5em*);
 
