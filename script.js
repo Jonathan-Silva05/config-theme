@@ -78,47 +78,47 @@
   /* ===================== FIM SCRIPT ====================== */
 
 
-/* ================ SCRIPT CONFIGURA TEMA ================ */
-const TOGGLE = document.getElementById("chk");
-const THEME = window.localStorage.getItem("theme");
+  /* ================ SCRIPT CONFIGURA TEMA ================ */
+    const TOGGLE = document.getElementById("chk");
+    const THEME = window.localStorage.getItem("theme");
 
-// Verifica o tema e atualiza a caixa de seleção
-if (THEME === "dark") {
-    document.body.classList.add("dark");
-    TOGGLE.checked = true;
-}
-
-// Função para atualizar as classes com base no estado do toggle
-function updateIconClasses() {
-    const sunIcon = document.getElementById("sun-icon");
-    const moonIcon = document.getElementById("moon-icon");
-
-    if (TOGGLE.checked) {
-        moonIcon.classList.remove("hidden");
-        sunIcon.classList.add("hidden");
-    } else {
-        sunIcon.classList.remove("hidden");
-        moonIcon.classList.add("hidden");
-    }
-}
-
-// Atualiza as classes de ícones ao carregar a página
-updateIconClasses();
-
-TOGGLE.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-
-    // Atualiza o tema no armazenamento local com base no estado da caixa de seleção
-    if (TOGGLE.checked) {
-        window.localStorage.setItem("theme", "dark");
-    } else {
-        window.localStorage.setItem("theme", "light");
+    // Verifica o tema e atualiza a caixa de seleção
+    if (THEME === "dark") {
+        document.body.classList.add("dark");
+        TOGGLE.checked = true;
     }
 
-    // Atualiza as classes de ícones ao clicar no toggle
+    // Função para atualizar as classes com base no estado do toggle
+    function updateIconClasses() {
+        const sunIcon = document.getElementById("sun-icon");
+        const moonIcon = document.getElementById("moon-icon");
+
+        if (TOGGLE.checked) {
+            moonIcon.classList.remove("hidden");
+            sunIcon.classList.add("hidden");
+        } else {
+            sunIcon.classList.remove("hidden");
+            moonIcon.classList.add("hidden");
+        }
+    }
+
+    // Atualiza as classes de ícones ao carregar a página
     updateIconClasses();
-});
-/* ============== FIM SCRIPT CONFIGURA TEMA ============== */
+
+    TOGGLE.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        // Atualiza o tema no armazenamento local com base no estado da caixa de seleção
+        if (TOGGLE.checked) {
+            window.localStorage.setItem("theme", "dark");
+        } else {
+            window.localStorage.setItem("theme", "light");
+        }
+
+        // Atualiza as classes de ícones ao clicar no toggle
+        updateIconClasses();
+    });
+  /* ============== FIM SCRIPT CONFIGURA TEMA ============== */
 
 
 

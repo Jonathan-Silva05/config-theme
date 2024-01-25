@@ -1,8 +1,10 @@
 
+  /* Importação de Font Awesome com diferentes versões */
   @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
   @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
   @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
+  /* Reset de estilos para todos os elementos */
   * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@
     box-sizing: border-box;
   }
 
+  /* Esconde a barra de rolagem do navegador */
   body::-webkit-scrollbar{
     visibility: hidden;
     width: 0px;
@@ -19,6 +22,7 @@
 /* ==============================================
 - TAMANHO DA FONT
 ============================================== */
+  /* Estilos para diferentes tamanhos de fonte */
   .size_1 {
     font-size: 1em;
     --height-label: 26px;
@@ -41,21 +45,10 @@
     --translateX-ball: 36px;
   }
 
-  .size_2 {
-    font-size: 2em;
-    --height-label: 52px;
-    --width-label: 100px;
-    --top-ball: 4px;
-    --left-ball: 4px;
-    --height-ball: 44px;
-    --width-ball: 44px;
-    --translateX-ball: 48px;
-  }
-
-
 /* ==============================================
 - CHECKBOX MODO DARK
 ============================================== */
+  /* Estilos para o modo escuro e checkbox associado */
   body {
     --bg-grey-light: #fafafa;
     --bg-white: #ffffff;
@@ -370,19 +363,13 @@
     }
   }
 
-  #page-1 {
-    background-color: #ff000069; /* Cor de fundo para page-1 */
+  #page-1, #page-3{
+    background-color: #ff000069; /* Cor de fundo para page-1 e page-3 */
   }
 
   #page-2 {
     background-color: #00ff0069; /* Cor de fundo para page-2 */
   }
-
-  #page-3 {
-    background-color: #0000ff69; /* Cor de fundo para page-3 */
-  }
-
-
 
 
 /* ==============================================
